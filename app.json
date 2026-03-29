@@ -1,29 +1,35 @@
 {
   "expo": {
-    "name": "avila-mobile",
+    "name": "Avila Wallet",
     "slug": "avila-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Avilaicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Avilaicon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF9800"
     },
     "ios": {
+      "bundleIdentifier": "com.teebabs.avilamobile",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.teebabs.avilamobile",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#FF9800",
+        "foregroundImage": "./assets/Avilaicon.png"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-secure-store"],
+    "extra": {
+      "eas": {
+        "projectId": "11b4414a-c406-4556-82e9-6ceda2a2eb1e"
+      }
     }
   }
 }
